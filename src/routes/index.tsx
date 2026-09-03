@@ -166,7 +166,7 @@ function LandingPage() {
 
       {/* Marquee strip */}
       <div className="border-y border-border bg-blush py-5">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-3 px-6 text-[0.68rem] font-medium tracking-[0.3em] text-bordeaux uppercase sm:gap-x-10">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-3 px-6 text-[0.68rem] font-medium tracking-[0.2em] text-bordeaux uppercase sm:gap-x-10 sm:tracking-[0.3em]">
           <span>Noivas</span>
           <span aria-hidden="true" className="hidden sm:inline">✦</span>
           <span>15 anos</span>
