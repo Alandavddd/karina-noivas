@@ -118,14 +118,14 @@ function LandingPage() {
       </header>
 
       {/* Hero */}
-      <section id="topo" className="relative flex min-h-svh items-end">
+      <section id="topo" className="relative flex min-h-svh items-end overflow-hidden">
         <img
           src={vestido5.url}
           alt="Noiva com vestido azul claro cintilante e coroa na entrada da Karina Noivas"
-          className="animate-kenburns absolute inset-0 h-full w-full object-cover object-top"
+          className="animate-kenburns absolute inset-0 h-full w-full object-cover object-[center_22%] md:object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/25 to-bordeaux-deep/10" />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pt-40 pb-24">
+        <div className="absolute inset-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/35 to-bordeaux-deep/25" />
+        <div className="relative mx-auto w-full max-w-6xl px-6 pt-40 pb-24 [text-shadow:0_1px_12px_rgb(0_0_0/0.35)]">
           <p
             className="animate-fade-up font-script text-4xl text-champagne md:text-5xl"
             style={{ animationDelay: "0.15s" }}
@@ -139,7 +139,7 @@ function LandingPage() {
             Realizando sonhos, um vestido por vez.
           </h1>
           <p
-            className="animate-fade-up mt-6 max-w-xl font-serif text-lg text-primary-foreground/85 italic md:text-xl"
+            className="animate-fade-up mt-6 max-w-xl font-serif text-lg text-primary-foreground/90 italic md:text-xl"
             style={{ animationDelay: "0.55s" }}
           >
             Noivas, debutantes e madrinhas — há mais de três décadas vestindo os momentos mais
