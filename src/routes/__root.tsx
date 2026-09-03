@@ -77,21 +77,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Karina Noivas | Vestidos de Noiva, Debutante e Festa em Canoas" },
+      {
+        name: "description",
+        content:
+          "Desde 1989 realizando sonhos. Vestidos de noiva, 15 anos, formatura e madrinhas em Canoas. Agende sua prova na Karina Noivas.",
+      },
+      { name: "author", content: "Karina Noivas" },
+      { property: "og:title", content: "Karina Noivas | Realizando sonhos desde 1989" },
+      {
+        property: "og:description",
+        content:
+          "Vestidos de noiva, debutante e festa em Canoas, RS. Atendimento exclusivo e modelos únicos.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
