@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 
-import vestido1 from "@/assets/foto-vestido-1.jpg.asset.json";
-import vestido2 from "@/assets/foto-vestido-2.jpg.asset.json";
-import vestido3 from "@/assets/foto-vestido-3.jpg.asset.json";
-import vestido4 from "@/assets/foto-vestido-4.jpg.asset.json";
-import vestido5 from "@/assets/foto-vestido-5.jpg.asset.json";
-import vestido6 from "@/assets/foto-vestido-6.jpg.asset.json";
+import vestido1 from "@/assets/foto-vestido-1.jpg";
+import vestido2 from "@/assets/foto-vestido-2.jpg";
+import vestido3 from "@/assets/foto-vestido-3.jpg";
+import vestido4 from "@/assets/foto-vestido-4.jpg";
+import vestido5 from "@/assets/foto-vestido-5.jpg";
+import vestido6 from "@/assets/foto-vestido-6.jpg";
 import logo from "@/assets/logo-karina-noivas.svg";
 
 export const Route = createFileRoute("/")({
@@ -62,19 +62,19 @@ function useReveal() {
 
 const categories = [
   {
-    img: vestido5.url,
+    img: vestido5,
     alt: "Noiva com vestido azul esvoaçante na vitrine da Karina Noivas",
     label: "Noivas",
     text: "O vestido do grande dia, escolhido com calma, prova a prova.",
   },
   {
-    img: vestido6.url,
+    img: vestido6,
     alt: "Debutante sorrindo com vestido rosa bordado e coroa",
     label: "15 Anos",
     text: "Uma noite de princesa, do jeito que você sempre sonhou.",
   },
   {
-    img: vestido2.url,
+    img: vestido2,
     alt: "Debutante sentada com vestido azul-turquesa volumoso",
     label: "Festa & Formatura",
     text: "Silhuetas marcantes para brilhar em qualquer celebração.",
@@ -120,11 +120,11 @@ function LandingPage() {
       {/* Hero */}
       <section id="topo" className="relative flex min-h-svh items-end overflow-hidden pt-[72px]">
         <img
-          src={vestido5.url}
+          src={vestido5}
           alt="Noiva com vestido azul claro cintilante e coroa na entrada da Karina Noivas"
-          className="animate-kenburns absolute top-[72px] inset-x-0 bottom-0 h-full w-full object-cover object-[center_22%] md:object-top"
+          className="absolute top-[72px] inset-x-0 bottom-0 bg-gradient-to-t animate-kenburns absolute inset-0 h-full w-full object-cover object-[center_22%] md:object-top absolute top-[72px] inset-x-0 bottom-0"
         />
-        <div className="absolute top-[72px] inset-x-0 bottom-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/35 to-bordeaux-deep/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/35 to-bordeaux-deep/25" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pt-40 pb-24 [text-shadow:0_1px_12px_rgb(0_0_0/0.35)]">
           <p
             className="animate-fade-up font-script text-4xl text-champagne md:text-5xl"
@@ -145,7 +145,10 @@ function LandingPage() {
             Noivas, debutantes e madrinhas — há mais de três décadas vestindo os momentos mais
             importantes de Canoas.
           </p>
-          <div className="animate-fade-up mt-10 flex flex-wrap gap-4" style={{ animationDelay: "0.75s" }}>
+          <div
+            className="animate-fade-up mt-10 flex flex-wrap gap-4"
+            style={{ animationDelay: "0.75s" }}
+          >
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -168,13 +171,21 @@ function LandingPage() {
       <div className="border-y border-border bg-blush py-5">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-3 px-6 text-[0.68rem] font-medium tracking-[0.2em] text-bordeaux uppercase sm:gap-x-10 sm:tracking-[0.3em]">
           <span>Noivas</span>
-          <span aria-hidden="true" className="hidden sm:inline">✦</span>
+          <span aria-hidden="true" className="hidden sm:inline">
+            ✦
+          </span>
           <span>15 anos</span>
-          <span aria-hidden="true" className="hidden sm:inline">✦</span>
+          <span aria-hidden="true" className="hidden sm:inline">
+            ✦
+          </span>
           <span>Formaturas</span>
-          <span aria-hidden="true" className="hidden sm:inline">✦</span>
+          <span aria-hidden="true" className="hidden sm:inline">
+            ✦
+          </span>
           <span>Madrinhas</span>
-          <span aria-hidden="true" className="hidden sm:inline">✦</span>
+          <span aria-hidden="true" className="hidden sm:inline">
+            ✦
+          </span>
           <span>Convidadas</span>
         </div>
       </div>
@@ -221,7 +232,7 @@ function LandingPage() {
       {/* Statement with negative-space overlay */}
       <section id="galeria" className="relative overflow-hidden">
         <img
-          src={vestido3.url}
+          src={vestido3}
           alt="Debutante de vestido vermelho em meio a arco de flores no campo"
           loading="lazy"
           className="h-[80vh] w-full object-cover"
@@ -231,7 +242,7 @@ function LandingPage() {
           <div className="reveal max-w-3xl text-center">
             <p className="font-script text-4xl text-champagne md:text-5xl">o seu momento</p>
             <p className="mt-6 font-serif text-2xl leading-relaxed text-primary-foreground italic md:text-4xl">
-              “Aqui, cada prova é uma celebração. Você sai da loja sabendo que encontrou{' '}
+              “Aqui, cada prova é uma celebração. Você sai da loja sabendo que encontrou{" "}
               <span className="font-display not-italic tracking-wide">o</span> vestido.”
             </p>
           </div>
@@ -257,7 +268,7 @@ function LandingPage() {
         <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="reveal col-span-2 row-span-2">
             <img
-              src={vestido1.url}
+              src={vestido1}
               alt="Duas debutantes com vestidos verde-esmeralda bordados na Karina Noivas"
               loading="lazy"
               className="h-full w-full object-cover object-top"
@@ -265,7 +276,7 @@ function LandingPage() {
           </div>
           <div className="reveal" style={{ transitionDelay: "0.1s" }}>
             <img
-              src={vestido4.url}
+              src={vestido4}
               alt="Debutante com vestido lilás cintilante visto de cima"
               loading="lazy"
               className="aspect-square w-full object-cover object-top"
@@ -273,7 +284,7 @@ function LandingPage() {
           </div>
           <div className="reveal" style={{ transitionDelay: "0.2s" }}>
             <img
-              src={vestido6.url}
+              src={vestido6}
               alt="Sorriso de debutante com vestido rosa de pedrarias"
               loading="lazy"
               className="aspect-square w-full object-cover object-top"
@@ -281,7 +292,7 @@ function LandingPage() {
           </div>
           <div className="reveal col-span-2" style={{ transitionDelay: "0.25s" }}>
             <img
-              src={vestido2.url}
+              src={vestido2}
               alt="Debutante de vestido azul-turquesa posando ao ar livre"
               loading="lazy"
               className="aspect-[2/1] w-full object-cover object-[center_20%]"
@@ -294,22 +305,21 @@ function LandingPage() {
       <section id="sobre" className="bg-bordeaux-deep text-primary-foreground">
         <div className="mx-auto grid max-w-6xl gap-14 px-6 py-28 md:grid-cols-2 md:items-center">
           <div className="reveal">
-            <img
-              src={logo}
-              alt="Logotipo Karina Noivas"
-              className="w-36 md:w-44"
-            />
+            <img src={logo} alt="Logotipo Karina Noivas" className="w-36 md:w-44" />
             <p className="mt-8 font-script text-4xl text-champagne">tradição & carinho</p>
             <h2 className="mt-4 font-display text-4xl leading-tight md:text-5xl">
               Desde 1989 no mercado, realizando sonhos
             </h2>
             <p className="mt-6 max-w-md font-serif text-lg leading-relaxed text-primary-foreground/80 italic">
-              Uma história construída prova após prova, geração após geração. Na Karina Noivas,
-              cada cliente é recebida com atendimento exclusivo, provadores amplos e a curadoria
-              de quem entende que o vestido certo muda tudo.
+              Uma história construída prova após prova, geração após geração. Na Karina Noivas, cada
+              cliente é recebida com atendimento exclusivo, provadores amplos e a curadoria de quem
+              entende que o vestido certo muda tudo.
             </p>
           </div>
-          <div className="reveal grid grid-cols-3 gap-6 text-center" style={{ transitionDelay: "0.15s" }}>
+          <div
+            className="reveal grid grid-cols-3 gap-6 text-center"
+            style={{ transitionDelay: "0.15s" }}
+          >
             {[
               ["37", "anos de tradição"],
               ["+10 mil", "sonhos realizados"],
@@ -329,7 +339,7 @@ function LandingPage() {
         <div className="grid gap-14 md:grid-cols-2 md:items-center">
           <div className="reveal relative overflow-hidden">
             <img
-              src={vestido3.url}
+              src={vestido3}
               alt="Vestido vermelho de debutante ao ar livre"
               loading="lazy"
               className="aspect-[4/5] w-full object-cover"
@@ -410,7 +420,12 @@ function LandingPage() {
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-bordeaux">
               WhatsApp
             </a>
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-bordeaux">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-bordeaux"
+            >
               Instagram
             </a>
             <a href={MAPS_URL} target="_blank" rel="noreferrer" className="hover:text-bordeaux">
