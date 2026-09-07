@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 
 import vestido1 from "@/assets/foto-vestido-1.jpg";
@@ -8,6 +8,8 @@ import vestido4 from "@/assets/foto-vestido-4.jpg";
 import vestido5 from "@/assets/foto-vestido-5.jpg";
 import vestido6 from "@/assets/foto-vestido-6.jpg";
 import logo from "@/assets/logo-karina-noivas.svg";
+import { Footer } from "@/components/Footer";
+import { Header, WHATSAPP_SCHEDULE_URL } from "@/components/Header";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,8 +33,7 @@ export const Route = createFileRoute("/")({
   component: LandingPage,
 });
 
-const WHATSAPP_URL =
-  "https://wa.me/5551992402094?text=Ol%C3%A1!%20Quero%20agendar%20uma%20prova%20de%20vestido.";
+const WHATSAPP_URL = WHATSAPP_SCHEDULE_URL;
 const INSTAGRAM_URL = "https://instagram.com/karinanoivasoficial";
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Rua+Jos%C3%A9+Ver%C3%ADssimo+2049+Harmonia+Canoas";
@@ -86,36 +87,7 @@ function LandingPage() {
 
   return (
     <div ref={pageRef} className="bg-background text-foreground antialiased">
-      {/* Navigation */}
-      <header className="fixed inset-x-0 top-0 z-50 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#topo" className="font-script text-3xl leading-none text-bordeaux">
-            Karina Noivas
-          </a>
-          <nav className="hidden items-center gap-8 text-[0.7rem] font-medium tracking-[0.25em] uppercase md:flex">
-            <a href="#colecao" className="transition-colors hover:text-bordeaux">
-              Coleção
-            </a>
-            <a href="#galeria" className="transition-colors hover:text-bordeaux">
-              Galeria
-            </a>
-            <a href="#sobre" className="transition-colors hover:text-bordeaux">
-              A Loja
-            </a>
-            <a href="#visite" className="transition-colors hover:text-bordeaux">
-              Visite-nos
-            </a>
-          </nav>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="bg-bordeaux px-5 py-2.5 text-[0.7rem] font-medium tracking-[0.2em] text-primary-foreground uppercase transition-colors hover:bg-bordeaux-deep"
-          >
-            Agendar prova
-          </a>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section id="topo" className="relative flex min-h-svh items-end overflow-hidden pt-[72px]">
@@ -163,6 +135,12 @@ function LandingPage() {
             >
               Ver coleções
             </a>
+            <Link
+              to="/catalogo"
+              className="border border-primary-foreground/60 px-8 py-4 text-[0.72rem] font-semibold tracking-[0.25em] text-primary-foreground uppercase transition-colors hover:border-primary-foreground hover:bg-primary-foreground/10"
+            >
+              Ver catálogo
+            </Link>
           </div>
         </div>
       </section>
@@ -226,6 +204,14 @@ function LandingPage() {
               </div>
             </a>
           ))}
+        </div>
+        <div className="reveal mt-12 text-center">
+          <Link
+            to="/catalogo"
+            className="inline-block border-b border-bordeaux pb-1 text-[0.7rem] font-semibold tracking-[0.25em] text-bordeaux uppercase transition-opacity hover:opacity-70"
+          >
+            Ver catálogo completo
+          </Link>
         </div>
       </section>
 
@@ -411,32 +397,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border bg-blush">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-14 text-center">
-          <img src={logo} alt="Karina Noivas" className="w-24" />
-          <p className="font-script text-3xl text-bordeaux">realizando sonhos desde 1989</p>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-[0.65rem] font-medium tracking-[0.25em] uppercase">
-            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:text-bordeaux">
-              WhatsApp
-            </a>
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-bordeaux"
-            >
-              Instagram
-            </a>
-            <a href={MAPS_URL} target="_blank" rel="noreferrer" className="hover:text-bordeaux">
-              Como chegar
-            </a>
-          </div>
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Karina Noivas — Canoas, RS. Todos os direitos reservados.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
