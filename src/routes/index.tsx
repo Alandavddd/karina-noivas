@@ -99,7 +99,13 @@ function LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/35 to-bordeaux-deep/25" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pt-40 pb-24 [text-shadow:0_1px_12px_rgb(0_0_0/0.35)]">
           <p
-            className="animate-fade-up font-script text-4xl text-champagne md:text-5xl"
+            className="animate-fade-up font-script text-5xl leading-[1.05] text-champagne break-words sm:text-6xl md:text-8xl lg:text-9xl"
+            style={{ animationDelay: "0s" }}
+          >
+            Karina Noivas
+          </p>
+          <p
+            className="animate-fade-up mt-3 font-script text-4xl text-champagne md:text-5xl"
             style={{ animationDelay: "0.15s" }}
           >
             desde 1989
