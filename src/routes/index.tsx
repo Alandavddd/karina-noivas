@@ -90,11 +90,14 @@ function LandingPage() {
       <Header />
 
       {/* Hero */}
-      <section id="topo" className="relative flex min-h-svh items-end overflow-hidden pt-[72px]">
+      <section
+        id="topo"
+        className="relative flex min-h-svh items-end overflow-hidden pt-[var(--header-height)]"
+      >
         <img
           src={vestido5}
           alt="Noiva com vestido azul claro cintilante e coroa na entrada da Karina Noivas"
-          className="absolute top-[72px] inset-x-0 bottom-0 bg-gradient-to-t animate-kenburns absolute inset-0 h-full w-full object-cover object-[center_22%] md:object-top absolute top-[72px] inset-x-0 bottom-0"
+          className="absolute top-[var(--header-height)] inset-x-0 bottom-0 bg-gradient-to-t animate-kenburns absolute inset-0 h-full w-full object-cover object-[center_22%] md:object-top absolute top-[var(--header-height)] inset-x-0 bottom-0"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-bordeaux-deep/90 via-bordeaux-deep/35 to-bordeaux-deep/25" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pt-40 pb-24 [text-shadow:0_1px_12px_rgb(0_0_0/0.35)]">
