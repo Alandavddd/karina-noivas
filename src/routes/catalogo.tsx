@@ -133,22 +133,25 @@ function CategorySection({
 
 function ProductCard({ product, category }: { product: Product; category: ProductCategory }) {
   const whatsappLink = buildProductWhatsAppLink(product, category);
+  const [imgFailed, setImgFailed] = useState(false);
+
+  const showImage = Boolean(product.image) && !imgFailed;
 
   return (
     <div className="flex flex-col overflow-hidden border border-border bg-card sm:flex-row">
-      {/*
-        PLACEHOLDER DE IMAGEM
-        ----------------------
-        Isso aqui é só uma cor sólida no lugar da foto do produto. Quando
-        você tiver a imagem real, veja o passo a passo no topo deste
-        arquivo (seção "COMO TROCAR O PLACEHOLDER PELA FOTO DE VERDADE" em
-        catalog-data.ts) ou o comentário logo abaixo.
-      */}
       <div
-        className="aspect-[4/5] w-full shrink-0 sm:w-72"
-        style={{ backgroundColor: category.placeholderColor }}
-        aria-hidden="true"
-      />
+        className="aspect-[4/5] w-full shrink-0 overflow-hidden sm:w-72"
+        style={showImage ? undefined : { backgroundColor: category.placeholderColor }}
+      >
+        {showImage && (
+          <img
+            src={product.image}
+            alt={product.name}
+            className="h-full w-full object-cover"
+            onError={() => setImgFailed(true)}
+          />
+        )}
+      </div>
 
       <div className="flex flex-1 flex-col justify-center p-8">
         <span className="text-[0.65rem] font-semibold tracking-[0.25em] text-muted-foreground uppercase">
