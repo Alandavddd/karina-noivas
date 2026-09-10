@@ -60,13 +60,11 @@ function CatalogoPage() {
 
       {/* Seções por categoria */}
       <div className="mx-auto max-w-6xl px-6">
-        {categories.map((category) => (
-          <CategorySection
-            key={category.id}
-            category={category}
-            isVisible={activeFilter === ALL_FILTER || activeFilter === category.id}
-          />
-        ))}
+        {categories.map((category) => {
+          const isVisible = activeFilter === ALL_FILTER || activeFilter === category.id;
+          if (!isVisible) return null;
+          return <CategorySection key={category.id} category={category} />;
+        })}
       </div>
 
       <Footer />
@@ -97,35 +95,22 @@ function FilterPill({
   );
 }
 
-function CategorySection({
-  category,
-  isVisible,
-}: {
-  category: ProductCategory;
-  isVisible: boolean;
-}) {
+function CategorySection({ category }: { category: ProductCategory }) {
   const categoryProducts = products.filter((p) => p.categoryId === category.id);
   if (categoryProducts.length === 0) return null;
 
   return (
-    <section
-      id={category.id}
-      className="catalog-collapse"
-      data-hidden={!isVisible}
-      aria-hidden={!isVisible}
-    >
-      <div className="min-h-0 overflow-hidden py-16">
-        <div className="max-w-xl">
-          <p className="font-script text-3xl text-bordeaux">coleção</p>
-          <h2 className="mt-2 font-display text-3xl md:text-4xl">{category.label}</h2>
-          <p className="mt-3 font-serif text-muted-foreground italic">{category.tagline}</p>
-        </div>
+    <section id={category.id} className="animate-fade-up py-16">
+      <div className="max-w-xl">
+        <p className="font-script text-3xl text-bordeaux">coleção</p>
+        <h2 className="mt-2 font-display text-3xl md:text-4xl">{category.label}</h2>
+        <p className="mt-3 font-serif text-muted-foreground italic">{category.tagline}</p>
+      </div>
 
-        <div className="mt-10 space-y-8">
-          {categoryProducts.map((product) => (
-            <ProductCard key={product.id} product={product} category={category} />
-          ))}
-        </div>
+      <div className="mt-10 space-y-8">
+        {categoryProducts.map((product) => (
+          <ProductCard key={product.id} product={product} category={category} />
+        ))}
       </div>
     </section>
   );
