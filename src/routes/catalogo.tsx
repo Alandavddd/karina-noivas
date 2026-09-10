@@ -30,7 +30,7 @@ function CatalogoPage() {
       <Header />
 
       {/* Cabeçalho da página */}
-      <section className="mx-auto max-w-6xl px-6 pt-40 pb-16 text-center">
+      <section className="mx-auto max-w-6xl px-6 pt-[calc(var(--header-height)+90px)] pb-16 text-center">
         <p className="font-script text-4xl text-bordeaux">nosso catálogo</p>
         <h1 className="mt-3 font-display text-4xl md:text-5xl">Cada peça, uma história</h1>
         <p className="mx-auto mt-6 max-w-xl font-serif text-lg text-muted-foreground italic">
@@ -40,7 +40,7 @@ function CatalogoPage() {
       </section>
 
       {/* Barra de filtros */}
-      <div className="sticky top-[65px] z-40 border-y border-border bg-background/95 backdrop-blur-md">
+      <div className="sticky top-[var(--header-height)] z-40 border-y border-border bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 px-6 py-4">
           <FilterPill
             label="Todos"
