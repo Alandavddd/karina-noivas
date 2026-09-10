@@ -42,6 +42,12 @@
 }
 
 :root {
+  /*
+   * Valor inicial usado antes do JS do Header medir a altura real (evita
+   * pulo de layout no primeiro render/SSR). O componente Header substitui
+   * isso automaticamente assim que monta no navegador.
+   */
+  --header-height: 116px;
   --radius: 0.25rem;
   --background: oklch(0.975 0.008 15);
   --foreground: oklch(0.22 0.03 15);
