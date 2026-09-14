@@ -1,12 +1,14 @@
 import vestido15Anos1 from "@/assets/catalogo/15-anos/vestido-debutante-esmeralda.jpeg";
 import vestido15Anos2 from "@/assets/catalogo/15-anos/vestido-debutante-preto-glitter.jpeg";
 import vestido15Anos3 from "@/assets/catalogo/15-anos/vestido-debutante-vermelho.jpeg";
+import vestido15Anos4 from "@/assets/catalogo/15-anos/vestido-debutante-azul-glitter.jpeg";
 
 import vestidoFormatura1 from "@/assets/catalogo/formatura/vestido-festa-azul.jpeg";
 import vestidoFormatura2 from "@/assets/catalogo/formatura/vestido-festa-verde.jpeg";
 
 import vestidoGalaEFestas1 from "@/assets/catalogo/gala-e-festas/vestido-festa-magenta.jpeg";
 import vestidoGalaEFestas2 from "@/assets/catalogo/gala-e-festas/vestido-festa-preto.jpeg";
+import vestidoGalaEFestas3 from "@/assets/catalogo/gala-e-festas/vestido-festa-bordo-sereia.jpeg";
 
 import vestidoMadrinhas1 from "@/assets/catalogo/madrinhas/vestido-festa-lilas.jpeg";
 import vestidoMadrinhas2 from "@/assets/catalogo/madrinhas/vestido-festa-verde-2.jpeg";
@@ -15,7 +17,8 @@ import vestidoNoivas1 from "@/assets/catalogo/noivas/vestido-noiva-detalhe-corpe
 import vestidoNoivas2 from "@/assets/catalogo/noivas/vestido-noiva-renda.jpeg";
 import vestidoNoivas3 from "@/assets/catalogo/noivas/vestido-noiva.jpeg";
 
-// import terno1 from "@/assets/catalogo/ternos"
+import terno1 from "@/assets/catalogo/ternos/terno-cinza.jpeg";
+import terno2 from "@/assets/catalogo/ternos/terno-azul-royal.jpeg";
 
 export type ProductCategory = {
   /** identificador único, usado internamente (filtro, âncora da seção) */
@@ -96,36 +99,43 @@ export const products: Product[] = [
     id: "1",
     categoryId: "15-anos",
     name: "Vestido Esmeralda",
-    description: "[Aqui vai a descrição do vestido de 15 anos]",
+    description: "Ombré esmeralda com brilho suave, decote princesa e corpete de renda bordado em pérolas.",
     image: vestido15Anos1,
   },
   {
     id: "2",
     categoryId: "15-anos",
     name: "Vestido Preto Glitter",
-    description: "[Aqui vai a descrição do vestido de 15 anos]",
+    description: "Silhueta de princesa em preto glitter, ombros à mostra e cinto transparente que marca a cintura.",
     image: vestido15Anos2,
   },
   {
     id: "3",
     categoryId: "15-anos",
     name: "Vestido Vermelho",
-    description: "[Aqui vai a descrição do vestido de 15 anos]",
+    description: "Corpete rígido bordado em strass sobre saia rodada de tule vermelho com leve brilho.",
     image: vestido15Anos3,
+  },
+  {
+    id: "13",
+    categoryId: "15-anos",
+    name: "Vestido Azul Glitter",
+    description: "Azul serenity com glitter, ombros à mostra e laço na cintura para uma noite de princesa.",
+    image: vestido15Anos4,
   },
   // Formatura
   {
     id: "4",
     categoryId: "formatura",
     name: "Vestido Azul",
-    description: "[Aqui vai a descrição do vestido de formatura]",
+    description: "Decote V profundo em tecido fluido azul serenity, elegância leve para a noite de formatura.",
     image: vestidoFormatura1,
   },
   {
     id: "5",
     categoryId: "formatura",
     name: "Vestido Verde",
-    description: "[Aqui vai a descrição do vestido de formatura]",
+    description: "Um ombro só, manga longa bufante e fenda lateral em verde esmeralda brilhante.",
     image: vestidoFormatura2,
   },
   // Gala e Festas
@@ -133,29 +143,36 @@ export const products: Product[] = [
     id: "6",
     categoryId: "gala-e-festas",
     name: "Vestido Magenta",
-    description: "[Aqui vai a descrição do vestido de gala e festas]",
+    description: "Um ombro só em cetim magenta, drapeado que valoriza a silhueta e fenda frontal.",
     image: vestidoGalaEFestas1,
   },
   {
     id: "7",
     categoryId: "gala-e-festas",
     name: "Vestido Preto",
-    description: "[Aqui vai a descrição do vestido de gala e festas]",
+    description: "Paetês pretos do busto à barra, alcinhas finas e fenda lateral para um look de festa marcante.",
     image: vestidoGalaEFestas2,
+  },
+  {
+    id: "14",
+    categoryId: "gala-e-festas",
+    name: "Vestido Bordô Sereia",
+    description: "Corte sereia em bordô, faixas de strass no busto e barra em camadas de tule fluido.",
+    image: vestidoGalaEFestas3,
   },
   // Madrinhas
   {
     id: "8",
     categoryId: "madrinhas",
     name: "Vestido Lilás",
-    description: "[Aqui vai a descrição do vestido de madrinha]",
+    description: "Um ombro só em cetim lilás, drapeado na cintura e fenda lateral discreta.",
     image: vestidoMadrinhas1,
   },
   {
     id: "9",
     categoryId: "madrinhas",
     name: "Vestido Verde",
-    description: "[Aqui vai a descrição do vestido de madrinha]",
+    description: "Cetim verde esmeralda em um ombro só, caimento justo e fenda que alonga a silhueta.",
     image: vestidoMadrinhas2,
   },
   // Noivas
@@ -163,21 +180,36 @@ export const products: Product[] = [
     id: "10",
     categoryId: "noivas",
     name: "Vestido Renda Corpete",
-    description: "[Aqui vai a descrição do vestido de noiva]",
+    description: "Detalhe do corpete em renda com decote off-shoulder, bordado à mão nos mínimos detalhes.",
     image: vestidoNoivas1,
   },
   {
     id: "11",
     categoryId: "noivas",
     name: "Vestido Renda",
-    description: "[Aqui vai a descrição do vestido de noiva]",
+    description: "Vestido de noiva em renda com mangas curtas, saia rodada e cauda para o grande dia.",
     image: vestidoNoivas2,
   },
   {
     id: "12",
     categoryId: "noivas",
     name: "Vestido Renda Branco",
-    description: "[Aqui vai a descrição do vestido de noiva]",
+    description: "Renda leve com ombros à mostra e mangas bufantes, um toque romântico e atemporal.",
     image: vestidoNoivas3,
+  },
+  // Ternos
+  {
+    id: "15",
+    categoryId: "ternos",
+    name: "Terno Cinza",
+    description: "Terno cinza clássico de dois botões, ideal para casamentos e formaturas durante o dia.",
+    image: terno1,
+  },
+  {
+    id: "16",
+    categoryId: "ternos",
+    name: "Terno Azul Royal",
+    description: "Terno azul royal com colete, alfaiataria moderna para quem quer destaque na festa.",
+    image: terno2,
   },
 ];
