@@ -20,6 +20,13 @@ import vestidoNoivas3 from "@/assets/catalogo/noivas/vestido-noiva.jpeg";
 import terno1 from "@/assets/catalogo/ternos/terno-cinza.jpeg";
 import terno2 from "@/assets/catalogo/ternos/terno-azul-royal.jpeg";
 
+import vestidoAia1 from "@/assets/catalogo/aia/vestido-aia-flores-perolas.jpeg";
+import vestidoAia2 from "@/assets/catalogo/aia/vestido-aia-laco-pink.jpeg";
+import vestidoAia3 from "@/assets/catalogo/aia/vestido-aia-bordado-tule.jpeg";
+import vestidoAia4 from "@/assets/catalogo/aia/vestido-aia-vermelho.jpeg";
+
+import vestidoNoivas4 from "@/assets/catalogo/noivas/vestido-noiva-cropped-corse.jpeg";
+
 export type ProductCategory = {
   /** identificador único, usado internamente (filtro, âncora da seção) */
   id: string;
@@ -84,6 +91,12 @@ export const categories: ProductCategory[] = [
     label: "Ternos",
     tagline: "Alfaiataria sob medida para os cavalheiros da celebração.",
     placeholderColor: "#3f4652",
+  },
+  {
+    id: "aia",
+    label: "Vestidos de Aia",
+    tagline: "Delicadeza em cada detalhe para as pequenas encantarem o grande dia.",
+    placeholderColor: "#d4a5b0",
   },
   // {
   //   id: "malucos",
@@ -197,6 +210,13 @@ export const products: Product[] = [
     description: "Renda leve com ombros à mostra e mangas bufantes, um toque romântico e atemporal.",
     image: vestidoNoivas3,
   },
+  {
+    id: "17",
+    categoryId: "noivas",
+    name: "Vestido Saia Cropped Corselê",
+    description: "Corselê de renda bordada em pérolas sobre saia ampla em tule floral, um visual de noiva em duas peças.",
+    image: vestidoNoivas4,
+  },
   // Ternos
   {
     id: "15",
@@ -211,5 +231,34 @@ export const products: Product[] = [
     name: "Terno Azul Royal",
     description: "Terno azul royal com colete, alfaiataria moderna para quem quer destaque na festa.",
     image: terno2,
+  },
+  // Aia
+  {
+    id: "18",
+    categoryId: "aia",
+    name: "Vestido Aia Flores e Pérolas",
+    description: "Corpete bordado em flores e pérolas com mangas bufantes, saia rodada em tule off-white.",
+    image: vestidoAia1,
+  },
+  {
+    id: "19",
+    categoryId: "aia",
+    name: "Vestido Aia Laço Pink",
+    description: "Corpete em renda floral com faixa pink amarrada na cintura e barra dupla em cetim.",
+    image: vestidoAia2,
+  },
+  {
+    id: "20",
+    categoryId: "aia",
+    name: "Vestido Aia Bordado",
+    description: "Bordado floral em relevo no corpete, mangas curtas transparentes e saia ampla em tule.",
+    image: vestidoAia3,
+  },
+  {
+    id: "21",
+    categoryId: "aia",
+    name: "Vestido Aia Vermelho",
+    description: "Vestido vermelho em tule com aplicações florais, ideal para festas temáticas e ocasiões especiais.",
+    image: vestidoAia4,
   },
 ];
