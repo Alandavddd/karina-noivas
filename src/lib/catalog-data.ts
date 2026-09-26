@@ -2,6 +2,11 @@ import vestido15Anos1 from "@/assets/catalogo/15-anos/vestido-debutante-esmerald
 import vestido15Anos2 from "@/assets/catalogo/15-anos/vestido-debutante-preto-glitter.jpeg";
 import vestido15Anos3 from "@/assets/catalogo/15-anos/vestido-debutante-vermelho.jpeg";
 import vestido15Anos4 from "@/assets/catalogo/15-anos/vestido-debutante-azul-glitter.jpeg";
+import vestido15Anos5 from "@/assets/catalogo/15-anos/vestido-debutante-esmeralda-cristal.jpeg";
+import vestido15Anos6 from "@/assets/catalogo/15-anos/vestido-debutante-lilas.jpeg";
+import vestido15Anos7 from "@/assets/catalogo/15-anos/vestido-debutante-rosa.jpeg";
+import vestido15Anos8 from "@/assets/catalogo/15-anos/vestido-debutante-azul-marinho.jpeg";
+import vestido15Anos9 from "@/assets/catalogo/15-anos/vestido-debutante-roxo.jpeg";
 
 import vestidoFormatura1 from "@/assets/catalogo/formatura/vestido-festa-azul.jpeg";
 import vestidoFormatura2 from "@/assets/catalogo/formatura/vestido-festa-verde.jpeg";
@@ -26,6 +31,7 @@ import vestidoAia3 from "@/assets/catalogo/aia/vestido-aia-bordado-tule.jpeg";
 import vestidoAia4 from "@/assets/catalogo/aia/vestido-aia-vermelho.jpeg";
 
 import vestidoNoivas4 from "@/assets/catalogo/noivas/vestido-noiva-cropped-corse.jpeg";
+import vestidoNoivas5 from "@/assets/catalogo/noivas/vestido-noiva-manga-longa.jpeg";
 
 export type ProductCategory = {
   /** identificador único, usado internamente (filtro, âncora da seção) */
@@ -112,36 +118,81 @@ export const products: Product[] = [
     id: "1",
     categoryId: "15-anos",
     name: "Vestido Esmeralda",
-    description: "Ombré esmeralda com brilho suave, decote princesa e corpete de renda bordado em pérolas.",
+    description:
+      "Ombré esmeralda com brilho suave, decote princesa e corpete de renda bordado em pérolas.",
     image: vestido15Anos1,
   },
   {
     id: "2",
     categoryId: "15-anos",
     name: "Vestido Preto Glitter",
-    description: "Silhueta de princesa em preto glitter, ombros à mostra e cinto transparente que marca a cintura.",
+    description:
+      "Silhueta de princesa em preto glitter, ombros à mostra e cinto transparente que marca a cintura.",
     image: vestido15Anos2,
   },
   {
     id: "3",
     categoryId: "15-anos",
     name: "Vestido Vermelho",
-    description: "Corpete rígido bordado em strass sobre saia rodada de tule vermelho com leve brilho.",
+    description:
+      "Corpete rígido bordado em strass sobre saia rodada de tule vermelho com leve brilho.",
     image: vestido15Anos3,
   },
   {
     id: "13",
     categoryId: "15-anos",
     name: "Vestido Azul Glitter",
-    description: "Azul serenity com glitter, ombros à mostra e laço na cintura para uma noite de princesa.",
+    description:
+      "Azul serenity com glitter, ombros à mostra e laço na cintura para uma noite de princesa.",
     image: vestido15Anos4,
+  },
+  {
+    id: "22",
+    categoryId: "15-anos",
+    name: "Vestido Esmeralda Cristal",
+    description:
+      "Ombros à mostra em renda esmeralda bordada em pérolas, sobre ampla saia de paetês com efeito bordado.",
+    image: vestido15Anos5,
+  },
+  {
+    id: "23",
+    categoryId: "15-anos",
+    name: "Vestido Lilás Bordado",
+    description:
+      "Alças duplas de pérolas, corpete floral bordado e saia de tule glitter com babados de fita brilhante.",
+    image: vestido15Anos6,
+  },
+  {
+    id: "24",
+    categoryId: "15-anos",
+    name: "Vestido Rosa Cristal",
+    description:
+      "Corpete tomara-que-caia bordado em cristais sobre ampla saia de tule rosa com brilho suave.",
+    image: vestido15Anos7,
+  },
+  {
+    id: "25",
+    categoryId: "15-anos",
+    name: "Vestido Azul Marinho",
+    description:
+      "Alças e corpete bordados em azul-marinho, saia em camadas de tule glitter com barra rendada.",
+    image: vestido15Anos8,
+  },
+  {
+    id: "26",
+    categoryId: "15-anos",
+    name: "Vestido Roxo Laço",
+    description:
+      "Ombros à mostra com aplicação floral, cinto de strass na cintura e laço generoso no acabamento das costas.",
+    image: vestido15Anos9,
   },
   // Formatura
   {
     id: "4",
     categoryId: "formatura",
     name: "Vestido Azul",
-    description: "Decote V profundo em tecido fluido azul serenity, elegância leve para a noite de formatura.",
+    description:
+      "Decote V profundo em tecido fluido azul serenity, elegância leve para a noite de formatura.",
     image: vestidoFormatura1,
   },
   {
@@ -163,14 +214,16 @@ export const products: Product[] = [
     id: "7",
     categoryId: "gala-e-festas",
     name: "Vestido Preto",
-    description: "Paetês pretos do busto à barra, alcinhas finas e fenda lateral para um look de festa marcante.",
+    description:
+      "Paetês pretos do busto à barra, alcinhas finas e fenda lateral para um look de festa marcante.",
     image: vestidoGalaEFestas2,
   },
   {
     id: "14",
     categoryId: "gala-e-festas",
     name: "Vestido Bordô Sereia",
-    description: "Corte sereia em bordô, faixas de strass no busto e barra em camadas de tule fluido.",
+    description:
+      "Corte sereia em bordô, faixas de strass no busto e barra em camadas de tule fluido.",
     image: vestidoGalaEFestas3,
   },
   // Madrinhas
@@ -185,7 +238,8 @@ export const products: Product[] = [
     id: "9",
     categoryId: "madrinhas",
     name: "Vestido Verde",
-    description: "Cetim verde esmeralda em um ombro só, caimento justo e fenda que alonga a silhueta.",
+    description:
+      "Cetim verde esmeralda em um ombro só, caimento justo e fenda que alonga a silhueta.",
     image: vestidoMadrinhas2,
   },
   // Noivas
@@ -193,43 +247,57 @@ export const products: Product[] = [
     id: "10",
     categoryId: "noivas",
     name: "Vestido Renda Corpete",
-    description: "Detalhe do corpete em renda com decote off-shoulder, bordado à mão nos mínimos detalhes.",
+    description:
+      "Detalhe do corpete em renda com decote off-shoulder, bordado à mão nos mínimos detalhes.",
     image: vestidoNoivas1,
   },
   {
     id: "11",
     categoryId: "noivas",
     name: "Vestido Renda",
-    description: "Vestido de noiva em renda com mangas curtas, saia rodada e cauda para o grande dia.",
+    description:
+      "Vestido de noiva em renda com mangas curtas, saia rodada e cauda para o grande dia.",
     image: vestidoNoivas2,
   },
   {
     id: "12",
     categoryId: "noivas",
     name: "Vestido Renda Branco",
-    description: "Renda leve com ombros à mostra e mangas bufantes, um toque romântico e atemporal.",
+    description:
+      "Renda leve com ombros à mostra e mangas bufantes, um toque romântico e atemporal.",
     image: vestidoNoivas3,
   },
   {
     id: "17",
     categoryId: "noivas",
     name: "Vestido Saia Cropped Corselê",
-    description: "Corselê de renda bordada em pérolas sobre saia ampla em tule floral, um visual de noiva em duas peças.",
+    description:
+      "Corselê de renda bordada em pérolas sobre saia ampla em tule floral, um visual de noiva em duas peças.",
     image: vestidoNoivas4,
+  },
+  {
+    id: "27",
+    categoryId: "noivas",
+    name: "Vestido Manga Longa",
+    description:
+      "Mangas longas em renda, decote nas costas e cauda ampla com barra bordada em renda floral.",
+    image: vestidoNoivas5,
   },
   // Ternos
   {
     id: "15",
     categoryId: "ternos",
     name: "Terno Cinza",
-    description: "Terno cinza clássico de dois botões, ideal para casamentos e formaturas durante o dia.",
+    description:
+      "Terno cinza clássico de dois botões, ideal para casamentos e formaturas durante o dia.",
     image: terno1,
   },
   {
     id: "16",
     categoryId: "ternos",
     name: "Terno Azul Royal",
-    description: "Terno azul royal com colete, alfaiataria moderna para quem quer destaque na festa.",
+    description:
+      "Terno azul royal com colete, alfaiataria moderna para quem quer destaque na festa.",
     image: terno2,
   },
   // Aia
@@ -237,28 +305,32 @@ export const products: Product[] = [
     id: "18",
     categoryId: "aia",
     name: "Vestido Aia Flores e Pérolas",
-    description: "Corpete bordado em flores e pérolas com mangas bufantes, saia rodada em tule off-white.",
+    description:
+      "Corpete bordado em flores e pérolas com mangas bufantes, saia rodada em tule off-white.",
     image: vestidoAia1,
   },
   {
     id: "19",
     categoryId: "aia",
     name: "Vestido Aia Laço Pink",
-    description: "Corpete em renda floral com faixa pink amarrada na cintura e barra dupla em cetim.",
+    description:
+      "Corpete em renda floral com faixa pink amarrada na cintura e barra dupla em cetim.",
     image: vestidoAia2,
   },
   {
     id: "20",
     categoryId: "aia",
     name: "Vestido Aia Bordado",
-    description: "Bordado floral em relevo no corpete, mangas curtas transparentes e saia ampla em tule.",
+    description:
+      "Bordado floral em relevo no corpete, mangas curtas transparentes e saia ampla em tule.",
     image: vestidoAia3,
   },
   {
     id: "21",
     categoryId: "aia",
     name: "Vestido Aia Vermelho",
-    description: "Vestido vermelho em tule com aplicações florais, ideal para festas temáticas e ocasiões especiais.",
+    description:
+      "Vestido vermelho em tule com aplicações florais, ideal para festas temáticas e ocasiões especiais.",
     image: vestidoAia4,
   },
 ];

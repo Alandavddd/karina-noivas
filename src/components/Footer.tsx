@@ -30,6 +30,17 @@ export function Footer() {
             Como chegar
           </a>
         </div>
+        {/*
+         * Telefone fixo, pedido pela cliente. Mantido discreto (texto pequeno,
+         * cor neutra) porque o atendimento principal é pelo WhatsApp acima —
+         * este é só um contato alternativo pra quem preferir ligar.
+         */}
+        <a
+          href="tel:+555130775051"
+          className="text-[0.65rem] text-muted-foreground hover:text-bordeaux"
+        >
+          Telefone: (51) 3077-5051
+        </a>
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Karina Noivas — Canoas, RS. Todos os direitos reservados.
         </p>

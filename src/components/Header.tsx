@@ -7,9 +7,11 @@ export const WHATSAPP_SCHEDULE_URL =
 /**
  * Horários de atendimento (pedido da cliente para ficarem bem visíveis).
  * Único lugar pra editar caso o horário mude — usado na barra do topo e
- * repetido no rodapé.
+ * repetido no rodapé. Sábado, domingo e outros horários fora da grade fixa
+ * são atendidos mediante agendamento prévio (ex: à noite), por isso o
+ * "horário a combinar" no fim da frase.
  */
-export const BUSINESS_HOURS = "Seg a sáb, 9h às 18h30 · Domingo, fechado";
+export const BUSINESS_HOURS = "Seg a sex, 9h às 18h30 · Demais horários, a combinar";
 
 export function Header() {
   const headerRef = useRef<HTMLElement>(null);
