@@ -25,6 +25,8 @@ import vestidoNoivas3 from "@/assets/catalogo/noivas/vestido-noiva.jpeg";
 import terno1 from "@/assets/catalogo/ternos/terno-cinza.jpeg";
 import terno2 from "@/assets/catalogo/ternos/terno-azul-royal.jpeg";
 
+import terno3 from "@/assets/catalogo/ternos/terno-cinza-claro-gravata-lilas.jpeg";
+
 import vestidoAia1 from "@/assets/catalogo/aia/vestido-aia-flores-perolas.jpeg";
 import vestidoAia2 from "@/assets/catalogo/aia/vestido-aia-laco-pink.jpeg";
 import vestidoAia3 from "@/assets/catalogo/aia/vestido-aia-bordado-tule.jpeg";
@@ -308,6 +310,14 @@ export const products: Product[] = [
     description:
       "Terno azul royal com colete, alfaiataria moderna para quem quer destaque na festa.",
     image: terno2,
+  },
+  {
+    id: "30",
+    categoryId: "ternos",
+    name: "Terno Cinza Claro Gravata Lilás",
+    description:
+      "Terno cinza claro com gravata e lenço de bolso lilás, opção com colete off-white para padrinhos e noivos.",
+    image: terno3,
   },
   // Aia
   {
