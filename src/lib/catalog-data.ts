@@ -30,6 +30,9 @@ import vestidoAia2 from "@/assets/catalogo/aia/vestido-aia-laco-pink.jpeg";
 import vestidoAia3 from "@/assets/catalogo/aia/vestido-aia-bordado-tule.jpeg";
 import vestidoAia4 from "@/assets/catalogo/aia/vestido-aia-vermelho.jpeg";
 
+import vestidoPrenda1 from "@/assets/catalogo/prenda/vestido-prenda-verde-agua.jpeg";
+import vestidoPrenda2 from "@/assets/catalogo/prenda/vestido-prenda-rosa.jpeg";
+
 import vestidoNoivas4 from "@/assets/catalogo/noivas/vestido-noiva-cropped-corse.jpeg";
 import vestidoNoivas5 from "@/assets/catalogo/noivas/vestido-noiva-manga-longa.jpeg";
 
@@ -103,6 +106,12 @@ export const categories: ProductCategory[] = [
     label: "Vestidos de Aia",
     tagline: "Delicadeza em cada detalhe para as pequenas encantarem o grande dia.",
     placeholderColor: "#d4a5b0",
+  },
+  {
+    id: "prenda",
+    label: "Vestidos de Prenda",
+    tagline: "Tradição gaúcha em vestidos para adultos e crianças, do Dia do Gaúcho aos CTGs.",
+    placeholderColor: "#6fae9a",
   },
   // {
   //   id: "malucos",
@@ -332,5 +341,22 @@ export const products: Product[] = [
     description:
       "Vestido vermelho em tule com aplicações florais, ideal para festas temáticas e ocasiões especiais.",
     image: vestidoAia4,
+  },
+  // Prenda
+  {
+    id: "28",
+    categoryId: "prenda",
+    name: "Vestido de Prenda Verde Água",
+    description:
+      "Corpete verde água com passamanaria verde, mangas brancas com boca de sino e babado branco na cintura. Disponível para adultos e crianças.",
+    image: vestidoPrenda1,
+  },
+  {
+    id: "29",
+    categoryId: "prenda",
+    name: "Vestido de Prenda Rosa",
+    description:
+      "Peitilho branco com fitas e rendas em rosa pink, saia rodada e babado na cintura. Disponível para adultos e crianças.",
+    image: vestidoPrenda2,
   },
 ];
